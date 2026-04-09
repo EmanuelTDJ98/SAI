@@ -8,10 +8,9 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="relative bg-slate-950 pt-28 pb-10 overflow-hidden border-t border-white/5">
-      
       {/* --- TÍTULO CENTRAL --- */}
       <div className="container mx-auto px-6 mb-24 text-center">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -24,17 +23,16 @@ export const Footer: React.FC = () => {
 
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
-          
           {/* --- LADO IZQUIERDO: IMAGEN VERTICAL --- */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="lg:col-span-4 h-[400px] lg:h-[600px] rounded-3xl overflow-hidden relative shadow-2xl border border-white/5"
           >
-            <img 
+            <img
               src={imagenF}
-              alt="Instalaciones SAI" 
+              alt="Instalaciones SAI"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
@@ -42,7 +40,6 @@ export const Footer: React.FC = () => {
 
           {/* --- LADO DERECHO: CONTENIDO --- */}
           <div className="lg:col-span-8 flex flex-col justify-between">
-            
             {/* Texto de Evaluación */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -52,14 +49,22 @@ export const Footer: React.FC = () => {
             >
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
                 Solicite una <br />
-                <span className="text-sai-turquesa underline decoration-white/10 italic">Evaluación sin Costo</span>
+                <span className="text-sai-turquesa underline decoration-white/10 italic">
+                  Evaluación sin Costo
+                </span>
               </h3>
               <div className="space-y-6 text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-3xl">
                 <p>
-                  Nuestros especialistas están listos para analizar sus necesidades de climatización y ofrecerle la mejor solución técnica y económica para su proyecto.
+                  Nuestros especialistas están listos para analizar sus
+                  necesidades de climatización y ofrecerle la mejor solución
+                  técnica y económica para su proyecto.
                 </p>
                 <p>
-                  Ya sea un nuevo proyecto o la modernización de sistemas existentes, en <span className="text-white font-medium italic">SAI</span> tenemos la experiencia y capacidad para garantizar resultados excepcionales.
+                  Ya sea un nuevo proyecto o la modernización de sistemas
+                  existentes, en{" "}
+                  <span className="text-white font-medium italic">SAI</span>{" "}
+                  tenemos la experiencia y capacidad para garantizar resultados
+                  excepcionales.
                 </p>
               </div>
             </motion.div>
@@ -78,15 +83,34 @@ export const Footer: React.FC = () => {
                   </h4>
                   <div className="space-y-3 pt-4">
                     <p className="text-gray-400 hover:text-sai-turquesa transition-colors">
-                      <span className="text-white font-bold block text-xs uppercase opacity-50 mb-1 tracking-widest">Email</span>
-                      <a href="mailto:eskenazinissim@gmail.com" className="text-lg">eskenazinissim@gmail.com</a>
+                      <span className="text-white font-bold block text-xs uppercase opacity-50 mb-1 tracking-widest">
+                        Email
+                      </span>
+                      <a
+                        href="mailto:eskenazinissim@gmail.com"
+                        className="text-lg"
+                      >
+                        eskenazinissim@gmail.com
+                      </a>
                     </p>
                     <p className="text-gray-400">
-                      <span className="text-white font-bold block text-xs uppercase opacity-50 mb-1 tracking-widest">Teléfonos</span>
+                      <span className="text-white font-bold block text-xs uppercase opacity-50 mb-1 tracking-widest">
+                        Teléfonos
+                      </span>
                       <span className="flex flex-wrap gap-x-4 text-lg">
-                        <a href="tel:5611161985" className="hover:text-sai-turquesa transition-colors">56 1116 1985</a>
+                        <a
+                          href="tel:5611161985"
+                          className="hover:text-sai-turquesa transition-colors"
+                        >
+                          56 1116 1985
+                        </a>
                         <span className="text-white/10">|</span>
-                        <a href="tel:5576573821" className="hover:text-sai-turquesa transition-colors">55 7657 3821</a>
+                        <a
+                          href="tel:5576573821"
+                          className="hover:text-sai-turquesa transition-colors"
+                        >
+                          55 7657 3821
+                        </a>
                       </span>
                     </p>
                   </div>
@@ -95,14 +119,32 @@ export const Footer: React.FC = () => {
                 <div className="space-y-6 flex flex-col justify-between">
                   <div className="space-y-4">
                     <p className="text-gray-400">
-                      <span className="text-white font-bold block text-xs uppercase opacity-50 mb-1 tracking-widest">Horario</span>
-                      <span className="text-lg">Lunes a Viernes 8:00 - 18:00 hrs</span>
+                      <span className="text-white font-bold block text-xs uppercase opacity-50 mb-1 tracking-widest">
+                        Horario
+                      </span>
+                      <span className="text-lg">
+                        Lunes a Viernes 8:00 - 18:00 hrs
+                      </span>
                     </p>
-                    <div className="bg-white border border-sai-turquesa/30 p-4 rounded-2xl">
-                      <p className="text-sai-turquesa text-sm font-black uppercase tracking-wider animate-pulse text-center">
+                    <motion.a
+                      href="https://wa.me/5611161985?text=Hola%20SAI,%20necesito%20asistencia%20con%20un%20servicio%20de%20emergencia%20o%20mantenimiento."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="block bg-white border border-sai-turquesa/30 p-4 rounded-2xl shadow-lg hover:shadow-sai-turquesa/20 transition-all group cursor-pointer"
+                    >
+                      <p className="text-sai-turquesa text-sm font-black uppercase tracking-wider animate-pulse group-hover:animate-none text-center flex items-center justify-center gap-2">
+                        {/* Icono opcional de WhatsApp para mejorar la UX */}
+                        <svg
+                          className="w-5 h-5 fill-current"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.891-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.891-11.891 11.891-2.001 0-3.971-.51-5.713-1.472l-6.28 1.69zm6.273-3.953c1.614.96 3.2 1.488 4.931 1.488 5.437 0 9.857-4.42 9.857-9.857 0-2.633-1.023-5.11-2.881-6.97-1.856-1.857-4.331-2.88-6.963-2.88-5.438 0-9.857 4.419-9.857 9.857 0 1.83.504 3.619 1.458 5.18l-1.01 3.692 3.8-.992z" />
+                        </svg>
                         Servicio 24/7: Emergencias y mantenimiento
                       </p>
-                    </div>
+                    </motion.a>
                   </div>
                 </div>
               </div>
@@ -112,13 +154,21 @@ export const Footer: React.FC = () => {
 
         {/* --- CRÉDITOS FINALES --- */}
         <div className="mt-28 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <img src={LOGO} alt="SAI Logo" className="h-10 opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all" />
+          <img
+            src={LOGO}
+            alt="SAI Logo"
+            className="h-10 opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all"
+          />
           <p className="text-gray-600 text-sm font-light">
             © {currentYear} SAI Ingeniería. Todos los derechos reservados.
           </p>
           <div className="flex gap-6 text-gray-500 text-xs uppercase tracking-widest">
-            <span className="hover:text-white cursor-pointer transition-colors">Aviso de Privacidad</span>
-            <span className="hover:text-white cursor-pointer transition-colors">Términos</span>
+            <span className="hover:text-white cursor-pointer transition-colors">
+              Aviso de Privacidad
+            </span>
+            <span className="hover:text-white cursor-pointer transition-colors">
+              Términos
+            </span>
           </div>
         </div>
       </div>

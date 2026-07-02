@@ -90,12 +90,12 @@ export const Footer: React.FC = () => {
                         href="mailto:eskenazinissim@gmail.com"
                         className="text-lg"
                       >
-                        eskenazinissim@gmail.com
+                        ventas1@saisoluciones.com
                       </a>
                     </p>
                     <p className="text-gray-400">
                       <span className="text-white font-bold block text-xs uppercase opacity-50 mb-1 tracking-widest">
-                        Teléfonos
+                         CONTACTANOS DANDO CLICK!
                       </span>
                       <span className="flex flex-wrap gap-x-4 text-lg">
                         <a
@@ -127,7 +127,7 @@ export const Footer: React.FC = () => {
                       </span>
                     </p>
                     <motion.a
-                      href="https://wa.me/5611161985?text=Hola%20SAI,%20necesito%20asistencia%20con%20un%20servicio%20de%20emergencia%20o%20mantenimiento."
+                      href="https://wa.me/5611161985?text=Hola%20SAI,%20necesito%20asistencia%20con%20un%20servicio%20de%2instalación%20o%20mantenimiento."
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
@@ -145,6 +145,27 @@ export const Footer: React.FC = () => {
                         Servicio 24/7: Emergencias y mantenimiento
                       </p>
                     </motion.a>
+
+                    <motion.a
+                       href="https://www.facebook.com/share/1DDrEJKy3t/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       whileHover={{ scale: 1.05 }}
+                       whileTap={{scale: 0.95}}
+                       className="block bg-white border border-sai-turquesa/30 p-4 rounded-2xl shadow-lg hover:shadow-sai-turquesa/20 transition-all group cursor-pointer"
+                       >
+                          <p className ="text-[#1877F2] text-sm font-black uppercase tracking-wider text-center flex items-center justify-center gap-2">
+                           {/* Icono de Facebook */}
+                           <svg 
+                                className="w-5 h-5 fill-current"
+                                viewBox="0 0 24 24"
+                            >
+                              <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c .733 0 1 .591 1 .324v-21c0-.733-.267-1-.324z"/>
+                            </svg>
+                            Síguenos en Facebook
+                          </p>
+
+                       </motion.a>
                   </div>
                 </div>
               </div>

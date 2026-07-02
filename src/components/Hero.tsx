@@ -49,6 +49,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-black text-[#22d3ee] mb-6 tracking-tight leading-tight"
           >
+            SAI<br />
             Soluciones en <br />
             <span className="text-sai-turquesa">Acondicionamiento Integral</span>
           </motion.h1>
@@ -71,9 +72,6 @@ export const Hero = () => {
             transition={{ delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <button className="px-8 py-3 bg-sai-turquesa text-slate-950 font-bold rounded-full hover:bg-white transition-colors">
-              Nuestros Servicios
-            </button>
           </motion.div>
         </motion.div>
       </div>

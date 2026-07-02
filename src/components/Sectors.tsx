@@ -35,6 +35,11 @@ const sectorsList: SectorData[] = [
     text: "Universidades, escuelas y centros educativos que buscan ambientes óptimos para el aprendizaje.",
     width: "80%",
   },
+    {
+    title: "Habitación y Residencial",
+    text: "Departamentos, casas y residencias que requieren soluciones de climatización eficientes y personalizadas.",
+    width: "70%",
+  },
 ];
 
 export const Sectors: React.FC = () => {

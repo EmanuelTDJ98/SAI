@@ -87,7 +87,7 @@ export const Benefits: React.FC = () => {
               whileHover={{ y: -10 }}
               className="bg-slate-900 border-l-4 border-sai-turquesa p-8 rounded-tr-3xl rounded-br-3xl hover:bg-slate-800 transition-all group"
             >
-              <span className="text-sai-turquesa font-black text-3xl opacity-40 group-hover:opacity-100 transition-opacity">
+              <span className="text-white font-black text-3xl opacity-50 group-hover:opacity-100 transition-opacity">
                 {item.number}
               </span>
               <h4 className="text-xl font-bold text-white mt-4 mb-3 uppercase tracking-tight">
